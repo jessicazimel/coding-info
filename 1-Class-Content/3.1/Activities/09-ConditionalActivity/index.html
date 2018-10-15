@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Conditional Demo</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var likeSteak = confirm("Do you like steak?");
+    var birthYear = prompt("What year were you born?");
+
+    // if (likeSteak === true)
+    if (likeSteak) {
+      if (birthYear < 1997) {
+
+        document.write("Enjoy your steak, and your sake.");
+      } else {
+        document.write("Enjoy your steak, and your ginger tea.");
+
+      }
+    } else {
+      document.write("Enjoy your tofu stir fry.");
+    }
+
+    if (birthYear < 1997) {
+      alert("Enjoy your sake.")
+    } else {
+      alert("No sake for you.")
+    }
+  </script>
+
+</body>
+
+</html>
